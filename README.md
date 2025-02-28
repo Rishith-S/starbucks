@@ -1,4 +1,4 @@
-# Frontend Practice - Starbucks concept website
+# Frontend Practice - Starbucks
 
 
 
