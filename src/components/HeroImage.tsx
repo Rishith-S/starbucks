@@ -1,7 +1,9 @@
 import { motion } from "motion/react";
-import { images } from "../App";
+import { images, IndexContextProvider } from "../App";
+import { useContext } from "react";
 
-export default function HeroImage({ index }: { index: boolean }) {
+export default function HeroImage() {
+  const index = useContext(IndexContextProvider);
   return (
     <motion.div
       key={`image-${index}`}

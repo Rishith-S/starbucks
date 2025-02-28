@@ -1,8 +1,10 @@
 import { motion } from "motion/react";
-import { colors, items } from "../App";
+import { colors, IndexContextProvider, items } from "../App";
 import SingleItem from "./SingleItem";
+import { useContext } from "react";
 
-export default function Content({index}:{index: boolean}) {
+export default function Content() {
+  const index = useContext(IndexContextProvider);
   return (
     <div className="w-3/4 flex flex-col pl-8 mt-32 font-mulsher gap-4 2xl:gap-8">
       <motion.div

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { createContext, useState } from "react";
 import Background from "./components/Background";
 import Content from "./components/Content";
 import Header from "./components/header";
@@ -16,22 +16,26 @@ export const items = [
   "src/assets/Starbucks-Coffee.png",
 ];
 export const titles = ["CHOCOLATE", "FRAPUCCINO"];
+
+export const IndexContextProvider = createContext(true);
+
 function App() {
   const [index, setIndex] = useState(true);
   return (
-    <div>
-      <Background index={index} />
-      <div className="w-full h-full lg:h-screen relative z-1 -mt-[100vh] backdrop-blur-[10px]">
-        <Header index={index} />
-        <div className="flex h-screen gap-6 flex-col lg:gap-0 lg:flex-row">
-          <Content index={index} />
-          <HeroImage index={index}/>
-          <RightSideDiv index={index} setIndex={setIndex} />
+    <IndexContextProvider value={index}>
+      <div>
+        <Background />
+        <div className="w-full h-full lg:h-screen relative z-1 -mt-[100vh] backdrop-blur-[10px]">
+          <Header />
+          <div className="flex h-screen gap-6 flex-col lg:gap-0 lg:flex-row">
+            <Content />
+            <HeroImage />
+            <RightSideDiv setIndex={setIndex} />
+          </div>
         </div>
       </div>
-    </div>
+    </IndexContextProvider>
   );
 }
-
 
 export default App;

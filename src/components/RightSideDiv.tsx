@@ -1,15 +1,14 @@
 import { motion } from "motion/react";
-import React, { SetStateAction } from "react";
+import React, { SetStateAction, useContext } from "react";
 import LeftArrow from "../assets/leftArrow";
-import { colors, titles } from "../App";
+import { colors, IndexContextProvider, titles } from "../App";
 
 export default function RightSideDiv({
-  index,
   setIndex,
 }: {
-  index: boolean;
   setIndex: React.Dispatch<SetStateAction<boolean>>;
 }) {
+  const index = useContext(IndexContextProvider)
   return (
     <motion.div
       key={index.toString()}

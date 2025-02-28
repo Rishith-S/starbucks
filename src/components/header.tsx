@@ -1,6 +1,9 @@
 import { motion } from "motion/react";
+import { useContext } from "react";
+import { IndexContextProvider } from "../App";
 
-export default function Header({index}:{index:boolean}) {
+export default function Header() {
+  const index = useContext(IndexContextProvider)
   return (
     <motion.div
       key={index.toString()}

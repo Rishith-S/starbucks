@@ -1,7 +1,9 @@
 import { motion } from 'motion/react'
-import { colors, images } from '../App'
+import { colors, images, IndexContextProvider } from '../App'
+import { useContext } from 'react'
 
-export default function Background({index}:{index:boolean}) {
+export default function Background() {
+  const index = useContext(IndexContextProvider)
   return (
     <div
         className="w-full h-screen relative z-0"
