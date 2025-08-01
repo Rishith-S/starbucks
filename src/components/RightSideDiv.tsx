@@ -30,7 +30,7 @@ export default function RightSideDiv({
       >
         <img
           className="w-50 h-50 scale-x-[-1] brightness-100 -right-10 absolute blur-sm"
-          src="src/assets/starbucks_logo.png"
+          src="/assets/starbucks_logo.png"
         />
       </motion.div>
       <div className="h-screen flex flex-col justify-end">

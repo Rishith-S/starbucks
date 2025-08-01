@@ -49,11 +49,11 @@ export default function Content() {
             className="text-white p-3 px-5 rounded-4xl tracking-wider items-center flex flex-row gap-2"
             style={{ backgroundColor: index ? colors[1] : colors[0] }}
           >
-            <img src="src/assets/cartIcon.svg" className="w-6 h-6" />
+            <img src="/assets/cartIcon.svg" className="w-6 h-6" />
             Order Now
           </div>
           <div className="bg-white font-bold p-3 px-5 rounded-4xl tracking-wider flex flex-row items-center gap-2">
-            <img src="src/assets/findalocation.svg" className="w-8 h-8" />
+            <img src="/assets/findalocation.svg" className="w-8 h-8" />
             Free Delivery
           </div>
         </div>

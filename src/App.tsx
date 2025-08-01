@@ -6,14 +6,14 @@ import HeroImage from "./components/HeroImage";
 import RightSideDiv from "./components/RightSideDiv";
 export const colors = ["#001c0f", "#00b37a"];
 export const images = [
-  "src/assets/starbucks_strawberry.png",
-  "src/assets/starbucks.png",
+  "/assets/starbucks_strawberry.png",
+  "/assets/starbucks.png",
 ];
 export const items = [
-  "src/assets/donut-poster.png",
-  "src/assets/icecoffee_starbucks.png",
-  "src/assets/starbucks_coffee_2.png",
-  "src/assets/Starbucks-Coffee.png",
+  "/assets/donut-poster.png",
+  "/assets/icecoffee_starbucks.png",
+  "/assets/starbucks_coffee_2.png",
+  "/assets/Starbucks-Coffee.png",
 ];
 export const titles = ["CHOCOLATE", "FRAPUCCINO"];
 

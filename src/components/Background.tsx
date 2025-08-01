@@ -42,7 +42,7 @@ export default function Background() {
             className={`w-20 h-20 lg:w-100 lg:h-100 ${
               index ? "brightness-20" : "brightness-100"
             }`}
-            src="src/assets/donut.png"
+            src="/assets/donut.png"
           />
         </motion.div>
         <motion.div
@@ -56,7 +56,7 @@ export default function Background() {
             className={`w-20 h-20 lg:w-50 lg:h-50 ${
               index ? "brightness-20" : "brightness-100"
             } rotate-90`}
-            src="src/assets/coffee_beans.webp"
+            src="/assets/coffee_beans.webp"
           />
         </motion.div>
       </div>

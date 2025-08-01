@@ -19,7 +19,7 @@ export default function HeroImage() {
       <img src={images[index ? 0 : 1]} className="object-contain lg:w-full" />
       <img
         className="hidden lg:flex w-35 h-25 scale-x-[-1] brightness-125 right-0 top-125 absolute"
-        src="src/assets/coffee_beans.webp"
+        src="/assets/coffee_beans.webp"
       />
     </motion.div>
   );
